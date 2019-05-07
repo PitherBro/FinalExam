@@ -9,7 +9,7 @@ public class TimeKeeper : MonoBehaviour
     float timer;
     private void Start()
     {
-        Settings.GameTime = 60;
+       // Settings.GameTime = 60;
         curTime = Settings.GameTime;
 
         Display.text = curTime.ToString() + "s";
