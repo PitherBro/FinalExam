@@ -8,6 +8,7 @@ public class LivesTracker : MonoBehaviour
 {
     public static int lives = 9;
     public Text LivesRemaining;
+    
 
     public void DecreaseLives()
     {
@@ -21,5 +22,7 @@ public class LivesTracker : MonoBehaviour
         LivesRemaining.text = lives.ToString();
         Debug.Log(lives);
     }
+   
+    
 
 }
