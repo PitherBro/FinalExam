@@ -9,10 +9,10 @@ public class TimeKeeper : MonoBehaviour
     float timer;
     private void Start()
     {
-        Settings.gameTime = 60;
-        curTime = Settings.gameTime;
+        Settings.GameTime = 60;
+        curTime = Settings.GameTime;
 
-        Display.text = curTime.ToString();
+        Display.text = curTime.ToString() + "s";
         timer = Time.deltaTime;
     }
     void Update()
@@ -22,7 +22,7 @@ public class TimeKeeper : MonoBehaviour
         if (timer >= 1f)
         {
             curTime--;
-            Display.text = curTime.ToString();
+            Display.text = curTime.ToString() +"s";
             timer = Time.deltaTime;
         }
     }
